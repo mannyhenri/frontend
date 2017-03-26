@@ -1,0 +1,46 @@
+{
+	"title" : "Complete : Web Design Day : Pattern Lab",
+	"htmlClass": "pl",
+	"bodyClass": "body",
+	"img": {
+		"landscape-4x3": {
+			"src": "http://placeimg.com/400/300/tech",
+			"alt": "4x3 Image"
+		},
+		"transom": {
+			"src": "../../images/sample/transom.svg",
+			"alt": "Transom"
+		},
+		"logo": {
+			"src": "../../images/old-street-lamp.png",
+			"alt": "The Gaslight Review Logo"
+		}
+	},
+	"headline": {
+		"short": "Lorizzle pimpin' dolizzle sit amet I",
+		"medium": "Rizzle adipiscing elizzle. Nullam sapien velizzle, shit volutpizzle, my"
+	},
+	"excerpt": {
+		"short": "Shizz fo shizzle mah nizzle fo rizzle, mah home g-dizzle, gravida vizzle, arcu. Pellentesque crunk tortizzle. Sed erizzle. Black izzle sheezy telliv.",
+		"medium": "Izzle crazy tempizzle sizzle. We gonna chung gangsta get down get down fo shizzle turpizzle. Away break it down black. Pellentesque bling bling rhoncus fo shizzle. In hac the bizzle platea dictumst. Black dapibizzle. Crackalackin.",
+		"long": "Curabitizzle fo shizzle diam quizzle nisi nizzle mollizzle. Suspendisse boofron. Morbi odio. Sure pizzle. Crazy orci. Shut the shizzle up maurizzle get down get down, check out this a, go to hizzle sit amizzle, malesuada izzle, pede. Pellentesque gravida. Vestibulizzle check it out mi, volutpat izzle, shiz sed, shiznit sempizzle, da bomb. Funky fresh in ipsum. Da bomb volutpat felis vizzle daahng dawg. Crizzle quis dope izzle fo shizzle my ni."
+	},
+	"siteTitle": "Site Name",
+	"pageTitle": "Page Name",
+	"edition": "27",
+	"author": "Author",
+	"hero" :  {
+		"intro": "A short phrase",
+		"preposition": "about",
+		"name" : "COOL<br/>PERSON",
+		"detail": "A never before seen series",
+		"callText": "Explore Now &rarr;"
+	},
+	"finePrint": "Hand made with Pattern Lab. Check the README for more info.",
+	"url": "http://webdesignday.com/",
+	"description" : "Those who find ugly meanings in beautiful things are corrupt without being charming. This is a fault. Those who find beautiful meanings in beautiful things are the cultivated. For these there is hope. They are the elect to whom beautiful things mean only Beauty. There is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all.",
+	"buttonTitle": "Hover text",
+	"type": "",
+	"buttonText": "Submit",
+	"manuscriptText": "If one cannot enjoy reading a book over and over again, there is no use in reading it at all. \rWe are all in the gutter, but some of us are looking at the stars.\rThe truth is rarely pure and never simple.\rMost people are other people. Their thoughts are someone else's opinions, their lives a mimicry, their passions a quotation."
+}

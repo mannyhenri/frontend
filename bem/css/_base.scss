@@ -1,0 +1,48 @@
+// Base importing specific CSS components from favorite frameworks or full framework import //
+// any frontend frameworks could be imported here -> simply insert your framework of choice
+// then use its components
+
+// Import Bootstrap components
+@import '../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../node_modules/bootstrap/scss/bootstrap-flex.scss';
+
+// Import google fonts
+@import url('https://fonts.googleapis.com/css?family=Bangers|Open+Sans:400,400i,600,600i,700,700i,800,800i');
+
+
+// Variables
+$titleFont: 'Bangers', Helvetica, Arial, sans-serif;
+$textFont: 'Open Sans', Helvetica, Arial, sans-serif;
+
+// Any base styles such as html or others can be customized here
+body {
+  font-family: $textFont;
+}
+
+//--------- MEDIA QUERIES BASE --------//
+
+// Media queries for line heights to improve visibility
+/* 768px/16px (base font size) = 48rem */
+@media (min-width: 48rem) {
+  p {
+    line-height: 1.5;
+  }
+}
+/* 1024px/16px (base font size) = 64em */
+@media (min-width: 64em) {
+  p {
+    line-height: 1.6;
+  }
+}
+/* 1220px/16px (base font size) = 76.25em */
+@media (min-width: 76.25em) {
+  p {
+    line-height: 1.7;
+  }
+}
+/* 1400px/16px (base font size) = 87.5em */
+@media (min-width: 87.5em) {
+  p {
+    line-height: 1.8;
+  }
+}

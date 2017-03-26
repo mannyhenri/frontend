@@ -1,0 +1,9 @@
+{
+  "hero" :  {
+    "intro": "A conversation",
+    "preposition": "with",
+    "name" : "FIRST<br/>LAST",
+    "detail": "What you didn't know",
+    "callText": "Find out now"
+  }
+}

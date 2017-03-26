@@ -1,0 +1,49 @@
+// BEM naming conventions:
+// 1- Elements should be created based on the context to which they belong (ex.: li for a navigation)
+// 2- Blocks are created based on context, very similar to components in react/angular
+// 3- Use modifiers for theming and variances of a block/element
+// 4- Be as context specific as possible with your names, ex.: "news-header" as oppose to plain "header"
+
+//--------- NAVIGATION SECTION --------//
+
+.nav {
+  @extend .navbar;
+  @extend .navbar-dark;
+  @extend .navbar-fixed-top;
+  @extend .bg-primary;
+  @extend .navbar-full;
+  font-family: $textFont;
+  font-weight: bold;
+}
+
+.nav__brand {
+  @extend .navbar-brand;
+}
+
+.nav__ul {
+  @extend .nav;
+  @extend .navbar-nav;
+}
+
+.nav__li {
+  @extend .nav-item;
+
+}
+
+.nav__a {
+  @extend .nav-link;
+}
+
+.nav__search {
+  @extend .form-inline;
+  @extend .float-xs-right;
+}
+
+.nav__search-field {
+  @extend .form-control;
+}
+
+.nav__search-button {
+  @extend .btn;
+  @extend .btn-outline-secondary;
+}

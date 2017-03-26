@@ -1,0 +1,14 @@
+<div class="container">
+  {{> organisms-masthead }}
+  <main role="main">
+    {{#hero}}
+    {{> molecules-block-hero:oscar }}
+    {{/hero}}
+    {{> atoms-paragraph }}
+    {{> atoms-paragraph(description: 'Browse selected work below.') }}
+    <div class="region region__work-list">
+      {{> molecules-blockset }}
+    </div>
+  </main>
+</div>
+{{> organisms-bigfoot }}

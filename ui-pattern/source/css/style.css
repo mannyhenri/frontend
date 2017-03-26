@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/*------------------------------------*\
+    $RESET
+\*------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, form, legend, label, table, header, footer, nav, section, figure {
+  margin: 0;
+  padding: 0;
+}
+
+header, footer, nav, section, article, hgroup, figure {
+  display: block;
+}
+
+/*------------------------------------*\
+    $SIMPLE ELEMENTS
+\*------------------------------------*/
+/* CSS Preprocessors Out of Scope
+  BLACK: #0B0F0C;
+  GREY: #636872;
+  WHITE: #F4F2F0;
+  ORANGE: #D16624;
+  DARKORANGE: #FF8C00;
+  LIGHTORANGE: #FFA500;
+*/
+
+:root {
+  --text-color: #0B0F0C;
+  --soft-grey: #636872;
+  --soft-white: #F4F2F0;
+  --primary: #D16624;
+  --primary-dark: #FF8C00;
+  --primary-light: #FFA500;
+}
+
+body {
+  font: 18px/1.5 "butlerregular", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+  overflow-x: hidden;
+  background-color: #F4F2F0;
+  background-color: var(--soft-white);
+  border-top: 8px solid #C09923;
+  border-top: 8px solid var(--soft-grey);
+  -webkit-text-size-adjust: 100%;
+  color: #0B0F0C;
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "butlerextrabold", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+strong,
+.font-bold {
+  font-family: "butlerextrabold";
+}
+
+em,
+.font-light {
+  font-family: "butlerultralight";
+}
+
+a {
+  color: #D16624;
+  color:  var(--primary);
+}
+
+a:hover{
+  color: #C09923;
+  color:  var(--primary-dark);
+}
+
+button {
+  padding: 5px 8px;
+  border-radius: 3px;
+  color: #fff;
+  background: #FF8C00;
+  background: var(--primary-dark);
+  border: 1px solid #D16624;
+  border: 1px solid var(--primary);
+  border-bottom-width: 3px;
+  font-size: 1.25rem;
+  margin: .5rem auto;
+}
+
+button:hover {
+  cursor: pointer;
+  background: orange;
+  background: var(--primary-light);
+}
+
+button:active{
+  position: relative;
+  top: 1px;
+}
+
+button ~ button {
+  margin-left: .5rem;
+}
+
+input {
+  line-height: 1.2;
+  text-indent: 3px;
+  padding: 5px;
+  margin-bottom: 1rem;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #eeeeee;
+  background: var(--soft-grey);
+  margin: 2rem 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+/*------------------------------------*\
+    $SITE PARTS
+\*------------------------------------*/
+.manuscript {
+  max-width: 100%;
+  padding: 1rem .25rem;
+  font-family: inherit;
+  white-space: pre-wrap;
+  /* technique demoed by Chris Coyier at  http://codepen.io/chriscoyier/pen/EyYgvQ */
+  font-size: calc(1rem + 1vw);
+  line-height: calc(1.2rem + 1vw);
+}
+
+.blockset {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.block {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 32%;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+}
+
+.block img {
+  display: block;
+}
+
+.block__hero {
+  margin: 1em auto;
+  max-width: 100%;
+  position: relative;
+  height: 500px;
+  background: url(../../images/sample/transom.svg);
+  background-size: cover;
+}
+
+.block__hero.oscar{
+  background: url(../../images/pattern-orange-triangles.svg), url(../../images/london2.jpg);
+  background-position: center center;
+  background-size: 100%;
+  background-blend-mode: screen;
+}
+
+.block__hero .block--title {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+}
+
+.block__hero .block--title--intro {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 4rem;
+  display: block;
+  line-height: 1;
+}
+
+.block__hero .block--title--preposition {
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: right;
+  display: block;
+  line-height: 1;
+}
+
+.block__hero .block--title--preposition:before {
+  content: '— ';
+}
+
+.block__hero .block--title--preposition:after {
+  content: ' —';
+}
+
+.block__hero .block--title--name {
+  display: block;
+  font-weight: 700;
+  font-size: 6rem;
+  text-align: right;
+  line-height: .9;
+}
+
+.block__hero .block--detail {
+  display: block;
+  margin: 1rem auto;
+  text-align: right;
+  font-size: 1.25rem;
+}
+
+.block__hero .block--call {
+  float: right;
+}
+
+.logo__small {
+  height: 80px;
+  float: left;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.nav--link {
+  margin-right: .5rem;
+}
+
+.nav--secondary {
+  margin-left: 0;
+}
+
+@media only screen and (min-width: 30em){
+  .nav {
+    flex-direction: row;
+  }
+  .nav--secondary{
+    margin-left: auto;
+  }
+}
+
+.form {
+  margin: 1rem;
+}
+
+.form label {
+  display: block;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+}
+
+/*------------------------------------*\
+    $PAGE ELEMENTS
+\*------------------------------------*/
+.container {
+  max-width: 33.33333em;
+  /* 600 / 18 */
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 60em) {
+  .container {
+    max-width: 50em;
+    /* 600 / 18 */
+    margin: 0 auto;
+  }
+}
+.masthead {
+  margin: 1rem auto;
+}
+
+main p {
+  padding: .5rem;
+}
+
+@media only screen and (min-width: 30em){
+  main p {
+    max-width: 33.3333rem; /* 600px / base font size  */
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+  .region__aside {
+    width: 10vw;
+    margin: 5rem 1rem 1rem;
+    -webkit-transform: translateX(3%);
+            transform: translateX(3%);
+    position: absolute;
+  }
+}
+.region--title {
+  margin-bottom: 0;
+  border-bottom: 1px solid black;
+}
+
+.aside-capable {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 60em) {
+  .aside-capable {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.region__work-list .blockset {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 60em) {
+  .region__work-list .blockset {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.bigfoot {
+  border-top: 1px solid #C09923;
+  border-top: 1px solid  var(--primary-dark);
+  padding: 4rem 1rem 1rem 1rem;
+  margin-top: 1rem;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.bigfoot .logo {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.facebook{
+  background: #3b5998;
+  border-color: #8b9dc3;
+}
+
+.facebook:hover{
+  background: #3b5998;
+}
+
+.twitter{
+  background: #55acee;
+  border-color: #55acee;
+}
+
+.twitter:hover{
+  background: #55acee;
+}

@@ -1,0 +1,44 @@
+// BEM naming conventions:
+// 1- Elements should be created based on the context to which they belong (ex.: li for a navigation)
+// 2- Blocks are created based on context, very similar to components in react/angular
+// 3- Use modifiers for theming and variances of a block/element
+// 4- Be as context specific as possible with your names, ex.: "news-header" as oppose to plain "header"
+
+//--------- ARTICLES SECTION --------//
+.all-articles {
+  @extend .container-fluid;
+
+}
+
+// TODO: fix the layout always puts everything on the same row
+.one-article {
+  @extend .card;
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 400px;
+  flex-grow: 1;
+  margin-right: 0.5rem;
+  padding: 0px 0px 0px 0px;
+  justify-content: flex-start;
+}
+
+.one-article__block {
+  @extend .card-block;
+}
+
+.one-article__header {
+  @extend .card-title;
+  font-family: $titleFont;
+  font-size: xx-large;
+  text-shadow: 2px 2px 0 rgb(204,211,213);
+}
+
+.one-article__img {
+  @extend .card-img-top;
+  width: 100%;
+  height: auto;
+}
+
+.one-article__p {
+  @extend .card-text;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  {{> organisms-masthead }}
+  {{> organisms-detail-header }}
+  <main role="main" class="aside-capable">
+    <div class="region region__main">
+      {{> atoms-manuscript-text }}
+    </div>
+    {{#aside}}
+      {{> organisms-detail-aside }}
+    {{/aside}}
+  </main>
+</div>
+{{> organisms-bigfoot }}

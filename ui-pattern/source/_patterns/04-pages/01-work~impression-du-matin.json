@@ -1,0 +1,23 @@
+{
+  "siteTitle" : "Gaslight Review",
+  "pageTitle" : "Impression Du Matin",
+  "author": "Oscar Wilde",
+  "manuscriptText" : "The Thames nocturne of blue and gold\rChanged to a Harmony in grey:\rA barge with ochre-coloured hay\rDropt from the wharf: and chill and cold\r\rThe yellow fog came creeping down\rThe bridges, till the houses’ walls\rSeemed changed to shadows and St. Paul’s\rLoomed like a bubble o’er the town.\r\rThen suddenly arose the clang\rOf waking life; the streets were stirred\rWith country waggons: and a bird\rFlew to the glistening roofs and sang.\r\rBut one pale woman all alone,\rThe daylight kissing her wan hair,\rLoitered beneath the gas lamps’ flare,\rWith lips of flame and heart of stone.",
+  "img" : {
+    "transom": {
+      "src": "../../images/transom.svg",
+      "alt": "Transom"
+    },
+    "landscape-4x3": {
+      "src": "../../images/whistler.jpg",
+      "alt": "A painting of the Thames by Whistler that the poem may be referring to"
+    }
+  },
+  "aside": {
+    "url": "https://en.wikipedia.org/wiki/Nocturne:_Blue_and_Gold_–_Old_Battersea_Bridge#/media/File:James_Abbot_McNeill_Whistler_006.jpg",
+    "headline": {
+      "short": "Wikimedia"
+    },
+    "description": "A painting of the Thames by Whistler that the poem may be referring to"
+  }
+}

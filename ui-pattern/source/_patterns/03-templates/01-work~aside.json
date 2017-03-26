@@ -1,0 +1,15 @@
+{
+  "aside": {
+    "img": {
+      "landscape-4x3": {
+        "src": "../../images/sample/fpo_16x9.png",
+        "alt": "An aside image"
+      }
+    },
+    "url": "http://patternlab.io",
+    "headline": {
+      "short": "Overridden"
+    },
+    "description": "The truth is rarely pure and never simple."
+  }
+}

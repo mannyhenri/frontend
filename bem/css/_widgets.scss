@@ -1,0 +1,19 @@
+// BEM naming conventions:
+// 1- Elements should be created based on the context to which they belong (ex.: li for a navigation)
+// 2- Blocks are created based on context, very similar to components in react/angular
+// 3- Use modifiers for theming and variances of a block/element
+// 4- Be as context specific as possible with your names, ex.: "news-header" as oppose to plain "header"
+
+//--------- WIDGETS SECTION --------//
+
+.footer {
+  @extend .container-fluid;
+}
+
+.footer__h3 {
+  font-family: $titleFont;
+}
+
+.footer__small {
+
+}

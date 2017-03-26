@@ -1,0 +1,23 @@
+// BEM naming conventions:
+// 1- Elements should be created based on the context to which they belong (ex.: li for a navigation)
+// 2- Blocks are created based on context, very similar to components in react/angular
+// 3- Use modifiers for theming and variances of a block/element
+// 4- Be as context specific as possible with your names, ex.: "news-header" as oppose to plain "header" again following
+// atomic/componentized structure.
+
+// Make sure each component follows the BEM naming conventions for maintenance ease
+// You can go as granular as needed for a pure atomic or components design
+
+//--------- IMPORT EACH COMPONENT HERE --------//
+@import 'base';
+@import 'navigation';
+@import 'hero';
+@import 'articles';
+@import 'widgets';
+
+// In theory no styles should appear here, you should apply your styles in the specific
+// atoms/components/nodes or the base
+
+
+
+

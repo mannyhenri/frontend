@@ -1,0 +1,38 @@
+// BEM naming conventions:
+// 1- Elements should be created based on the context to which they belong (ex.: li for a navigation)
+// 2- Blocks are created based on context, very similar to components in react/angular
+// 3- Use modifiers for theming and variances of a block/element
+// 4- Be as context specific as possible with your names, ex.: "news-header" as oppose to plain "header"
+
+//--------- HERO SECTION --------//
+
+.main-header {
+  @extend .jumbotron;
+  //background-image :
+  //        radial-gradient(
+  //        circle at bottom left,
+  //                        transparent,
+  //                        rgba(0,0,0,.8)),
+  //        url(../images/newspaper.jpg);
+  //background-position : 0 100%, 50% 50%;
+  //background-repeat : no-repeat, repeat;
+  background: url(../images/newspaper.jpg);
+  box-shadow : 0 1px 3px rgba(0,0,0,.8);
+}
+
+.main-header__h1 {
+  @extend .display-3;
+  padding-top: 5rem;
+  font-family: $titleFont;
+  color: $btn-primary-bg; // borrowed from Bootstrap
+  text-shadow: 3px 3px 0 rgb(204,211,213);
+}
+
+.section-content {
+  @extend .container-fluid;
+
+}
+
+.section-content__h1 {
+
+}
